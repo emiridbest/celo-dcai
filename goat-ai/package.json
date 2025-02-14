@@ -1,0 +1,29 @@
+{
+  "name": "goat-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ZZZZZZZ"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.1.11",
+    "@goat-sdk/adapter-vercel-ai": "^0.2.8",
+    "@goat-sdk/plugin-erc20": "^0.2.10",
+    "@goat-sdk/plugin-polymarket": "^0.3.10",
+    "@goat-sdk/plugin-superfluid": "^0.1.6",
+    "@goat-sdk/wallet-viem": "^0.2.8",
+    "ai": "^4.1.40",
+    "dotenv": "^16.4.7",
+    "viem": "2.21.49"
+    }
+}
