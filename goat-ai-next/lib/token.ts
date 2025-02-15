@@ -7,7 +7,7 @@ export const tokens: Token[] = [
         name: "USD Coin",
         chains: {
             "42220": {
-                contractAddress: "0x2F25deB3848C207fc8E0c34035B3Ba7fC157602B",
+                contractAddress: "0xcebA9300f2b948710d2653dD7B07f33A8B32118C",
             },
         },
     },
@@ -17,7 +17,7 @@ export const tokens: Token[] = [
         name: "Celo",
         chains: {
             "42220": {
-                contractAddress: "0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9",
+                contractAddress: "0x471EcE3750Da237f93B8E339c536989b8978a438",
             },
         },
     },
@@ -27,8 +27,8 @@ export const tokens: Token[] = [
         name: "Celo Dollar",
         chains: {
             "42220": {
-                contractAddress: "0x874069fa1eb16d44d622f2e0ca25eea172369bc1",
+                contractAddress: "0x765de816845861e75a25fca122bb6898b8b1282a",
             },
         },
     }
-]
+];
