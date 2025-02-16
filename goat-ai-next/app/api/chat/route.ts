@@ -65,7 +65,9 @@ export async function POST(req: Request) {
     const tools = await getOnChainTools({
         wallet: viem(walletClient),
         // @ts-ignore
-        plugins: [sendETH(), erc20({ tokens }), superfluid(),allora(),balmy()],
+        plugins: [sendETH(), erc20({ tokens }), superfluid(), allora({ 
+            apiKey: process.env.ALLORA_API_KEY,
+        }),balmy()],
     });
 
     const poly = await getOnChainTools({

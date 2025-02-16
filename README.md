@@ -20,9 +20,9 @@ Here, is an implementation of an AI Agent that can stream assets in streams to a
 │--------README.md
 ```
 # Integartions
-- Balmy => implement DCA via commands
-- Superfluid => Streams funds continuously to chosens addresss
-- Allora => For analysing market trends
+- Balmy => implement DCA via commands[Youtube]()
+- Superfluid => Streams funds continuously to chosens addresss. [Youtube](https://youtu.be/o7nnkkucXWU)
+- Allora => For analysing market trends[Youtube](https://youtu.be/S-sqCLpbSrY)
 - Others..
 
 ## Use Case

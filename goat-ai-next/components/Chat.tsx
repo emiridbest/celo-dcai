@@ -82,7 +82,7 @@ export default function Chat() {
                         )}
                     >
                         {message.role !== "user" && (
-                            <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-full bg-gray-500 flex items-center justify-center">
                                 <Bot className="w-5 h-5 text-white" />
                             </div>
                         )}
@@ -90,7 +90,7 @@ export default function Chat() {
                             className={cn(
                                 "rounded-lg px-4 py-2 max-w-[80%] break-words",
                                 message.role === "user"
-                                    ? "bg-blue-500 text-white"
+                                    ? "bg-gray-500 text-white"
                                     : "bg-gray-100 dark:bg-gray-800 dark:text-gray-100"
                             )}
                         >
@@ -106,7 +106,7 @@ export default function Chat() {
 
                 {isLoading && (
                     <div className="flex justify-start items-start gap-2">
-                        <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-500 flex items-center justify-center">
                             <Bot className="w-5 h-5 text-white" />
                         </div>
                         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg px-4 py-2">
@@ -137,7 +137,7 @@ export default function Chat() {
                             type="submit"
                             disabled={isLoading || !input.trim()}
                             size="icon"
-                            className="bg-blue-500 hover:bg-blue-600"
+                            className="bg-gray-500 hover:bg-gray-600"
                         >
                             <Send className="h-4 w-4" />
                         </Button>
