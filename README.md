@@ -1,6 +1,9 @@
 # Fun Stream
 ## Overview
-Here, is an implementation of an AI Agent that can stream assets in streams to addresses on a per second basis
+Here, is an implementation of an AI Agent that can:
+1. Implement dollar-cost-averaging
+2. Stream assets in streams to addresses on a per second basis
+3. Predict prices of cryto assets
 
 # Folder stucture
 ```
