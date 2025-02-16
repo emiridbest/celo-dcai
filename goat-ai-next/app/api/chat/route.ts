@@ -13,6 +13,9 @@ require("dotenv").config();
 import { google } from '@ai-sdk/google';
 import { streamText } from 'ai';
 import { sendETH, } from "@goat-sdk/wallet-evm";
+import { balmy } from "@goat-sdk/plugin-balmy";
+import { allora } from "@goat-sdk/plugin-allora";
+
 // import { kaiascanAPI } from '@/app/plugins/kaiaprice';
 // import { tokenDeployer } from '@/app/plugins/token-deployer';
 
@@ -24,7 +27,6 @@ const walletClient = createWalletClient({
     chain: celo,
 });
 
-export const maxDuration = 30;
 
 const tokens: Token[] = [
     {
@@ -58,13 +60,12 @@ const tokens: Token[] = [
         },
     }
 ];
-export const apiKey = process.env.OPENAI_API_KEY;
 export async function POST(req: Request) {
     const { messages } = await req.json();
     const tools = await getOnChainTools({
         wallet: viem(walletClient),
         // @ts-ignore
-        plugins: [sendETH(), erc20({ tokens }), superfluid()],
+        plugins: [sendETH(), erc20({ tokens }), superfluid(),allora(),balmy()],
     });
 
     const poly = await getOnChainTools({
@@ -82,7 +83,7 @@ export async function POST(req: Request) {
 
     const result = streamText({
         model: openai("gpt-4o-mini"),
-        system: "You are a helpful agent that performs onchain transactions like sending Kaia, tokens etc and provides onchain advice based on data given",
+        system: "You are a helpful agent that performs onchain transactions like sending celo,cusd, implement dolar-cost-averaging using balmy protocol, tokens etc and provides onchain advice based on data given",
         tools: tools,
         maxSteps: 5,
         messages,

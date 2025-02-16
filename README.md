@@ -19,6 +19,11 @@ Here, is an implementation of an AI Agent that can stream assets in streams to a
 │
 │--------README.md
 ```
+# Integartions
+- Balmy => implement DCA via commands
+- Superfluid => Streams funds continuously to chosens addresss
+- Allora => For analysing market trends
+- Others..
 
 ## Use Case
 - 🤖 AI-powered investment strategies
