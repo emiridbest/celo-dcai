@@ -9,19 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.1.2",
     "@ai-sdk/openai": "^1.1.11",
     "@goat-sdk/adapter-vercel-ai": "^0.2.8",
+    "@goat-sdk/core": "^0.4.6",
+    "@goat-sdk/plugin-allora": "^0.1.4",
     "@goat-sdk/plugin-erc20": "^0.2.10",
     "@goat-sdk/plugin-polymarket": "^0.3.10",
     "@goat-sdk/plugin-superfluid": "^0.1.6",
-    "@goat-sdk/wallet-viem": "^0.2.8",
-    "ai": "^4.1.40",
-    "viem": "2.21.49",
-    "@ai-sdk/google": "^1.1.2",
-    "@goat-sdk/core": "^0.4.6",
-    "@goat-sdk/plugin-allora": "^0.1.4",
     "@goat-sdk/wallet-evm": "^0.2.6",
+    "@goat-sdk/wallet-viem": "^0.2.8",
     "@radix-ui/react-slot": "^1.1.1",
+    "ai": "^4.1.40",
     "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -32,6 +31,7 @@
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "viem": "2.21.49",
     "zod": "^3.24.1"
   },
   "devDependencies": {
