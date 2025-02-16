@@ -23,7 +23,7 @@ Here, is an implementation of an AI Agent that can:
 │--------README.md
 ```
 # Integartions
-- Balmy => implement DCA via commands[Youtube]()
+- Balmy => implement DCA via commands[Youtube](https://youtu.be/S-sqCLpbSrY)
 - Superfluid => Streams funds continuously to chosens addresss. [Youtube](https://youtu.be/o7nnkkucXWU)
 - Allora => For analysing market trends[Youtube](https://youtu.be/S-sqCLpbSrY)
 - Others..
