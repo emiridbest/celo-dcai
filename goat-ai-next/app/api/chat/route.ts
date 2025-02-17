@@ -16,9 +16,6 @@ import { sendETH, } from "@goat-sdk/wallet-evm";
 import { balmy } from "@goat-sdk/plugin-balmy";
 import { allora } from "@goat-sdk/plugin-allora";
 
-// import { kaiascanAPI } from '@/app/plugins/kaiaprice';
-// import { tokenDeployer } from '@/app/plugins/token-deployer';
-
 const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
 
 const walletClient = createWalletClient({
@@ -87,7 +84,7 @@ export async function POST(req: Request) {
         model: openai("gpt-4o-mini"),
         system: "You are a helpful agent that performs onchain transactions like sending celo,cusd, implement dolar-cost-averaging using balmy protocol, tokens etc and provides onchain advice based on data given",
         tools: tools,
-        maxSteps: 5,
+        maxSteps: 20,
         messages,
     });
 
